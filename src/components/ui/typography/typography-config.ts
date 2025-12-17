@@ -27,6 +27,14 @@ export const typographyVariants = cva('antialiased leading-normal tracking-norma
       two: 'line-clamp-2',
       three: 'line-clamp-3',
     },
+    align: {
+      center: 'text-center',
+      left: 'text-left',
+      right: 'text-right',
+      justify: 'text-justify',
+      start: 'text-start',
+      end: 'text-end',
+    },
   },
   defaultVariants: {
     color: 'default',
@@ -34,5 +42,6 @@ export const typographyVariants = cva('antialiased leading-normal tracking-norma
     weight: 'regular',
     size: 'md',
     truncate: 'none',
+    align: 'justify',
   },
 });

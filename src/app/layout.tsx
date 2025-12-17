@@ -3,6 +3,8 @@ import type { ReactNode } from 'react';
 
 import '@/app/globals.css';
 
+import Provider from '@/providers/provider';
+
 export const metadata: Metadata = {
   title: 'Hello',
   description: '',
@@ -14,8 +16,10 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }

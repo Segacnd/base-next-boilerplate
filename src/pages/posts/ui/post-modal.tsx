@@ -6,7 +6,7 @@ import styles from './post-modal.module.css';
 
 import { useClickOutside } from '@/hooks/use-click-outside';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button/button';
 
 import { usePostModals } from '@/store/post-modal';
 

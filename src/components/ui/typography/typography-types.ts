@@ -14,7 +14,9 @@ type TypographyWithASChild = {
   asChild: true;
   children: ReactElement;
 };
+
 type TypographyContent = TypographyWithChildren | TypographyWithASChild;
+
 export type TypographyProps = { className?: string } & TypographyVariantsProps &
   TypographyContent &
   HTMLAttributes<HTMLElement>;

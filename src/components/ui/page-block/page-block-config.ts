@@ -1,0 +1,33 @@
+import { cva } from 'class-variance-authority';
+
+export const pageBlockVariants = cva('w-full', {
+  variants: {
+    fullScreen: { true: 'min-h-screen min-h-dvh' },
+    direction: { row: 'flex-row', col: 'flex-col' },
+    justify: {
+      start: 'justify-start',
+      center: 'justify-center',
+      end: 'justify-end',
+      between: 'justify-between',
+      around: 'justify-around',
+      evenly: 'justify-evenly',
+    },
+    align: {
+      start: 'items-start',
+      center: 'items-center',
+      end: 'items-end',
+      stretch: 'items-stretch',
+      baseline: 'items-baseline',
+    },
+    padding: { true: 'px-4 py-8 md:px-6' },
+    display: { flex: 'flex', block: 'block' },
+  },
+  defaultVariants: {
+    fullScreen: true,
+    display: 'flex',
+    direction: 'col',
+    justify: 'center',
+    align: 'center',
+    padding: true,
+  },
+});
