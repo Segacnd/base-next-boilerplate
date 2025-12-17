@@ -9,7 +9,14 @@ export default function Index() {
       <Link className="text-red-500" href="/posts">
         to Posts page
       </Link>
-      <Typography render={(className) => <div className={className}>text</div>} weight="bold" />
+      {/* children */}
+      <Typography color="primary" isHover weight="bold">
+        text children
+      </Typography>
+      {/* asChild */}
+      <Typography asChild color="muted" size="xl" weight="bold">
+        <div>text aschild</div>
+      </Typography>
     </main>
   );
 }
