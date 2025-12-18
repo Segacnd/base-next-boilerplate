@@ -3,9 +3,15 @@
     @apply shadow shadow-neutral-400;
   }
   .p-page {
-    @apply px-4 py-8 md:px-6;
+    @apply px-10 py-8 md:px-6;
   }
   .p-small {
     @apply px-3 py-2 md:px-5;
+  }
+  .inlineList {
+    @apply flex items-center justify-center gap-5;
+  }
+  .stackList {
+    @apply flex flex-col items-center justify-center gap-5;
   }
 }

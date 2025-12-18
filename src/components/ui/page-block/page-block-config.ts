@@ -19,9 +19,10 @@ export const pageBlockVariants = cva('w-full', {
       stretch: 'items-stretch',
       baseline: 'items-baseline',
     },
-    padding: { true: 'px-4 py-8 md:px-6' },
+    padding: { true: 'p-page' },
     display: { flex: 'flex', block: 'block' },
   },
+
   defaultVariants: {
     fullScreen: true,
     display: 'flex',
