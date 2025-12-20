@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion/accordion';
-import { Button } from '@/components/ui/button/button';
 import { Calendar } from '@/components/ui/calendar/calendar';
 import {
   Dialog,
@@ -45,9 +44,7 @@ export default function Index() {
           text children
         </Typography>
         <Dialog>
-          <DialogTrigger>
-            <Button>Open dialog</Button>
-          </DialogTrigger>
+          <DialogTrigger>Open dialog</DialogTrigger>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Example modal</DialogTitle>

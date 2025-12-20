@@ -18,8 +18,8 @@ export const typographyVariants = cva('antialiased leading-normal tracking-norma
     size: {
       xl: 'text-4xl md:text-5xl tracking-tight',
       lg: 'text-2xl md:text-3xl tracking-tight',
-      md: 'text-base',
-      sm: 'text-sm',
+      md: 'text-base ',
+      sm: 'text-sm leading-relaxed',
     },
     truncate: {
       none: '',
