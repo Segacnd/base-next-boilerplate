@@ -1,2 +1,2 @@
-yarn lint-staged
-yarn build
+pnpm lint-staged
+pnpm build
